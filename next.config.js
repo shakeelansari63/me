@@ -2,7 +2,7 @@ const path = require('path')
  
 module.exports = {
   output: "export",
-  basePath: "/shakeelansari63",
+  basePath: "/me",
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
