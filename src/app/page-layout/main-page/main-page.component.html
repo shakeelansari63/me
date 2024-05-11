@@ -1,4 +1,28 @@
 <app-tool-bar></app-tool-bar>
 <div class="app-container">
   <app-hero [userGithubProfile]="userGithubProfile"></app-hero>
+
+  <!-- Statistics Section -->
+  <app-section-title anchor="stats">Github Statistics</app-section-title>
+  <app-stats-section></app-stats-section>
+
+  <!-- Projects Section -->
+  <app-section-title anchor="projects">Github Projects</app-section-title>
+  <app-projects-section></app-projects-section>
+
+  <!-- Languages Section -->
+  <app-section-title anchor="languages">Github Languages</app-section-title>
+  <app-languages-section></app-languages-section>
+
+  <!-- Contribution Section -->
+  <app-section-title anchor="contributions">Streaks & Ranks</app-section-title>
+  <app-streak-section></app-streak-section>
+
+  <!-- Contribution Section -->
+  <app-section-title anchor="activity">Activity Graph</app-section-title>
+  <app-activity-section></app-activity-section>
+
+  <!-- Footer -->
+  <app-section-title [hideTitle]="true"></app-section-title>
+  <app-footer-section></app-footer-section>
 </div>
