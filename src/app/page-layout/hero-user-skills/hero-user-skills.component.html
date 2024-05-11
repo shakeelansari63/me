@@ -1,0 +1,84 @@
+<p-card styleClass="shadow-6 border-round h-full">
+  <ng-template pTemplate="header">
+    <div
+      class="p-2 flex flex-row border-top-1 border-bottom-1 border-indigo-700 border-round-top"
+    >
+      <i class="pi pi-circle-fill text-red-500 m-1"></i>
+      <i class="pi pi-circle-fill text-orange-500 m-1"></i>
+      <i class="pi pi-circle-fill text-green-500 m-1"></i>
+    </div>
+  </ng-template>
+  <div class="m-2 mono-spaced">
+    <div class="flex flex-row">
+      <div class="text-pink-500 px-1">const</div>
+      <div class="text-purple-500 font-bold px-1">coder</div>
+      <div class="text-pink-500 px-1">=</div>
+      <div class="px-1">{{ "{" }}</div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">name :</div>
+      <div class="px-1 text-green-500">
+        <q>{{ userGithubProfile?.name }}</q>
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">company :</div>
+      <div class="px-1 text-green-500">
+        <q>{{ userGithubProfile?.company }}</q>
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">location :</div>
+      <div class="px-1 text-green-500">
+        <q>{{ userGithubProfile?.location }}</q>
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">followers :</div>
+      <div class="px-1 text-orange-500">
+        {{ userGithubProfile?.followers }}
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">following :</div>
+      <div class="px-1 text-orange-500">
+        {{ userGithubProfile?.following }}
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">repositories :</div>
+      <div class="px-1 text-orange-500">
+        {{ userGithubProfile?.public_repos }}
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">hirable :</div>
+      <div class="px-1 text-orange-500">
+        {{ userGithubProfile?.hireable ?? false }}
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="pl-6"></div>
+      <div class="px-1 min-w-max">skills :</div>
+      <div class="px-1">
+        [
+        <span class="inline" *ngFor="let skill of userData.skills">
+          <q
+            ><p class="inline text-blue-400">{{ skill }}</p></q
+          >&comma;
+        </span>
+        ]
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="px-1">{{ "};" }}</div>
+    </div>
+  </div>
+</p-card>

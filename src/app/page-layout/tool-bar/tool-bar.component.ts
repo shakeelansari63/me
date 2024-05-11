@@ -7,5 +7,5 @@ import { userData } from '../../data/user-data';
   styleUrl: './tool-bar.component.scss',
 })
 export class ToolBarComponent {
-  username = `@${userData.devUsername}`;
+  username = userData.devUsername;
 }

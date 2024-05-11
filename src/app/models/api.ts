@@ -1,0 +1,34 @@
+export class GitProfileModel {
+  avatar_url: string | null = null;
+  bio: string | null = null;
+  blog: string | null = null;
+  company: string | null = null;
+  created_at: string | null = null;
+  email: string | null = null;
+  events_url: string | null = null;
+  followers: number | null = null;
+  followers_url: string | null = null;
+  following: number | null = null;
+  following_url: string | null = null;
+  gists_url: string | null = null;
+  gravatar_id: string | null = null;
+  hireable: string | null = null;
+  html_url: string | null = null;
+  id: string | null = null;
+  location: string | null = null;
+  login: string = '';
+  name: string = '';
+  node_id: string | null = null;
+  organizations_url: string | null = null;
+  public_gists: number | null = null;
+  public_repos: number | null = null;
+  received_events_url: string | null = null;
+  repos_url: string | null = null;
+  site_admin: boolean = false;
+  starred_url: string | null = null;
+  subscriptions_url: string | null = null;
+  twitter_username: string | null = null;
+  type: string | null = null;
+  updated_at: string | null = null;
+  url: string | null = null;
+}

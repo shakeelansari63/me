@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: SpaceMono;
+    src: url(assets/fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: SpaceMono;
+    src: url(assets/fonts/SpaceMono-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: SpaceMono;
+    src: url(assets/fonts/SpaceMono-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SpaceMono;
+    src: url(assets/fonts/SpaceMono-Italic.ttf);
+    font-style: italic;
+}
+
+.mono-spaced {
+    font-family: SpaceMono;
+}
+
+.app-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .app-container { max-width: 400px;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .app-container {max-width: 540px;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .app-container {max-width: 700px;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .app-container {max-width: 900px;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .app-container {max-width: 1120px;}
+  }

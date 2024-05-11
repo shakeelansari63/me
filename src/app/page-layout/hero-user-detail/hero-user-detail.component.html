@@ -1,0 +1,81 @@
+<p-card styleClass="h-full">
+  <div class="flex flex-column">
+    <div class="flex align-items-center justify-content-center mb-2">
+      <img
+        [src]="userGithubProfile?.avatar_url"
+        alt="Avatar"
+        class="border-circle"
+        width="150px"
+        height="150px"
+      />
+    </div>
+    <div class="flex align-items-center justify-content-center mb-2">
+      <div class="text-center">
+        <i class="inline pi pi-bolt text-orange-300 text-center"></i>&nbsp;
+        <p class="inline">{{ userGithubProfile?.bio }}</p>
+        &nbsp;
+        <i class="inline pi pi-bolt text-orange-300"></i>
+      </div>
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <div class="flex flex-column mt-auto">
+      <div class="flex align-items-center justify-content-center">
+        <!-- Github Link -->
+        <a
+          pButton
+          icon="pi pi-github"
+          class="p-button p-button-link m-2 no-underline"
+          target="_blank"
+          [href]="userData.github"
+        ></a>
+
+        <!-- Leetcode Link -->
+        <a
+          pButton
+          icon="pi pi-code"
+          class="p-button p-button-link m-2 no-underline"
+          target="_blank"
+          [href]="userData.leetcode"
+        ></a>
+
+        <!-- Linkedin Link -->
+        <a
+          pButton
+          icon="pi pi-linkedin"
+          class="p-button p-button-link m-2 no-underline"
+          target="_blank"
+          [href]="userData.linkedIn"
+        ></a>
+
+        <!-- Facebook Link -->
+        <a
+          pButton
+          icon="pi pi-facebook"
+          class="p-button p-button-link m-2 no-underline"
+          target="_blank"
+          [href]="userData.facebook"
+        ></a>
+
+        <!-- Twitter Link -->
+        <a
+          pButton
+          icon="pi pi-twitter"
+          class="p-button p-button-link m-2 no-underline"
+          target="_blank"
+          [href]="userData.twitter"
+        ></a>
+      </div>
+      <div class="flex align-items-center justify-content-center">
+        <a
+          pButton
+          icon="pi pi-bullseye"
+          class="p-button p-button-text text-orange-500 m-2 border-round-3xl no-underline border-shadow-6 border-orange-500"
+          target="_blank"
+          label="Check my badges"
+          [href]="userData.badges"
+        ></a>
+      </div>
+    </div>
+  </ng-template>
+</p-card>

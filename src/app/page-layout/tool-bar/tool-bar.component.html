@@ -1,5 +1,41 @@
-<p-toolbar>
+<p-toolbar styleClass="border-round">
   <div class="p-toolbar-group-start">
-    <h2>{{ username }}</h2>
+    <a
+      pButton
+      routerLink="/"
+      class="p-button p-button-link font-bold text-2xl"
+      icon="pi pi-at"
+      [label]="username"
+    ></a>
+  </div>
+  <div class="p-toolbar-group-end">
+    <a
+      pButton
+      href="#project"
+      class="p-button p-button-link no-underline"
+      icon="pi pi-folder"
+      label="Projects"
+    ></a>
+    <a
+      pButton
+      href="#stats"
+      class="p-button p-button-link no-underline"
+      icon="pi pi-chart-bar"
+      label="Stats"
+    ></a>
+    <a
+      pButton
+      href="#contributions"
+      class="p-button p-button-link no-underline"
+      icon="pi pi-download"
+      label="Contributions"
+    ></a>
+    <a
+      pButton
+      href="#thanks"
+      class="p-button p-button-link no-underline"
+      icon="pi pi-heart-fill"
+      label="Thanks"
+    ></a>
   </div>
 </p-toolbar>
