@@ -36,7 +36,7 @@ jobs:
         run: npm install gh-pages
 
       - name: Build package for deployment
-        run: ng build --base-href="/me/"
+        run: ng build --output-path dist --base-href="/me/"
 
       - name: Copy Index to 404
         run: cp dist/index.html dist/404.html
