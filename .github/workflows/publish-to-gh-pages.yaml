@@ -33,7 +33,7 @@ jobs:
         run: npm install gh-pages
 
       - name: Build package for deployment
-        run: npm run ng build --output-path=dist --base-href="https://shakeelansari63.github.io/me/"
+        run: npm run ng build --base-href="https://shakeelansari63.github.io/me/"
 
       - name: Deploy package to github pages
         run: |
