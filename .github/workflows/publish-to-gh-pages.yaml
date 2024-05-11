@@ -25,6 +25,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 18.x
+      
+      - name: Install Angular Cli
+        run: npm install -g @angular/cli
 
       - name: Install Project Dependencies
         run: npm install
@@ -33,7 +36,7 @@ jobs:
         run: npm install gh-pages
 
       - name: Build package for deployment
-        run: npm run ng build --base-href="/me/"
+        run: ng build --base-href="/me/"
 
       - name: Copy Index to 404
         run: cp dist/index.html dist/404.html
