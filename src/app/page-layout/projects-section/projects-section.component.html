@@ -1,1 +1,5 @@
-<p>projects-section works!</p>
+<div class="grid">
+  <div class="md:col-6 col-12" *ngFor="let project of projects">
+    <p-card>{{ project.full_name }}</p-card>
+  </div>
+</div>
