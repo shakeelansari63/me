@@ -6,10 +6,20 @@ import { userData } from '../data/user-data';
 })
 export class GithubStatsService {
   constructor() {}
-  private baseApiUrl = 'http://github-profile-summary-cards.vercel.app';
-  private theme = 'dark';
+  private profileStatsBaseUrl =
+    'http://github-profile-summary-cards.vercel.app';
+  private githubStatsbaseUrl = 'https://github-readme-stats.vercel.app';
+  private theme = 'bear';
 
   public getUserMainStats() {
-    return `${this.baseApiUrl}/api/cards/profile-details?username=${userData.githubUser}&theme=${this.theme}`;
+    return `${this.profileStatsBaseUrl}/api/cards/profile-details?username=${userData.githubUser}&theme=${this.theme}`;
+  }
+
+  public getUserGithubStats() {
+    return `${this.githubStatsbaseUrl}/api?username=${userData.githubUser}&show_icons=true&include_all_commits=true&theme=${this.theme}&hide_border=true`;
+  }
+
+  public getUserGithubStars() {
+    return `${this.githubStatsbaseUrl}/api?username=${userData.githubUser}&show_icons=true&include_all_commits=true&theme=${this.theme}&hide_border=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&hide=stars,commits,prs,issues,contribs`;
   }
 }
