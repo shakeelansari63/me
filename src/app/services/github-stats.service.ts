@@ -53,4 +53,8 @@ export class GithubStatsService {
   public getGlobalStarDevStats() {
     return `${this.starDevbaseUrl}/developers/${userData.githubUser}/badge/languages/global.svg`;
   }
+
+  public getProjectCard(repo: string) {
+    return `${this.githubStatsbaseUrl}/api/pin/?username=${userData.githubUser}&repo=${repo}&theme=${this.theme}&hide_border=true`;
+  }
 }
