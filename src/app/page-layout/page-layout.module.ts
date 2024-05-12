@@ -4,6 +4,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
 import { SplitterModule } from 'primeng/splitter';
 import { CardModule } from 'primeng/card';
+import { ImageModule } from 'primeng/image';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HeroComponent } from './hero/hero.component';
@@ -38,6 +39,7 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
     ButtonModule,
     SplitterModule,
     CardModule,
+    ImageModule,
   ],
   exports: [MainPageComponent],
 })
