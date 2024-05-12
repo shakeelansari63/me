@@ -1,23 +1,23 @@
 <div class="grid">
-  <div class="col">
-    <p-card styleClass="w-full max-h-20rem text-center">
-      <img [src]="githubStats.getStreaks()" />
+  <div class="md:col-6 col-12">
+    <p-card styleClass="w-full h-full max-h-20rem text-center">
+      <img [src]="githubStats.getStreaks()" class="w-full"/>
     </p-card>
   </div>
-  <div class="col">
-    <p-card styleClass="w-full max-h-20rem text-center">
-      <img [src]="githubStats.getProductiveTime()" />
+  <div class="md:col-6 col-12">
+    <p-card styleClass="w-full h-full max-h-20rem text-center">
+      <img [src]="githubStats.getProductiveTime()" class="w-full" />
     </p-card>
   </div>
 </div>
 <div class="grid">
-  <div class="col">
+  <div class="md:col-6 col-12">
     <img
       [src]="githubStats.getLocalStarDevStats()"
       class="w-full border-round"
     />
   </div>
-  <div class="col">
+  <div class="md:col-6 col-12">
     <img
       [src]="githubStats.getGlobalStarDevStats()"
       class="w-full border-round"
