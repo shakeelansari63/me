@@ -1,1 +1,19 @@
-<p>languages-section works!</p>
+<div class="grid">
+  <div class="col-6">
+    <p-card styleClass="w-full max-h-20rem text-center">
+      <img [src]="githubStats.getTopLanguageByRepo()" class="h-full" />
+    </p-card>
+  </div>
+  <div class="col-6">
+    <p-card styleClass="w-full max-h-20rem text-center">
+      <img [src]="githubStats.getTopLanguageByCommit()" class="h-full" />
+    </p-card>
+  </div>
+</div>
+<div class="grid mt-2">
+  <div class="col">
+    <p-card styleClass="w-full max-h-20rem text-center">
+      <img [src]="githubStats.getTopLanguages()" class="h-full" />
+    </p-card>
+  </div>
+</div>
