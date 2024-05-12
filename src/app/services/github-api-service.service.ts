@@ -18,10 +18,19 @@ export class GithubApiServiceService {
   private userProfile$: BehaviorSubject<GitProfileModel | null> =
     new BehaviorSubject<GitProfileModel | null>(null);
 
+  private userProjects$: BehaviorSubject<any | null> =
+    new BehaviorSubject<GitProfileModel | null>(null);
+
   public getUserProfile() {
     if (this.userProfile$.value === null) this.setUserProfile();
 
     return this.userProfile$;
+  }
+
+  public getUserProjects() {
+    if (this.userProjects$.value === null) this.setUserProjects();
+
+    return this.userProjects$;
   }
 
   private setUserProfile() {
@@ -40,5 +49,28 @@ export class GithubApiServiceService {
           detail: error,
         })
     );
+  }
+
+  private setUserProjects() {
+    this.http
+      .get(
+        this.baseApiUrl +
+          `search/repositories?q=user:${userData.githubUser}+fork:false&sort=stars&per_page=10&type=Repositories`
+      )
+      .subscribe(
+        (profile) => {
+          const profileData = Object.setPrototypeOf(
+            profile,
+            GitProfileModel.prototype
+          );
+          this.userProjects$.next(profileData);
+        },
+        (error) =>
+          this.messageService.add({
+            severity: 'error',
+            summary: 'API Error',
+            detail: error,
+          })
+      );
   }
 }

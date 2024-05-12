@@ -1,19 +1,19 @@
 <div class="grid">
-  <div class="col-6">
+  <div class="col">
     <p-card styleClass="w-full max-h-20rem text-center">
-      <img [src]="githubStats.getTopLanguageByRepo()" class="h-full" />
+      <img [src]="githubStats.getTopLanguageByRepo()" />
     </p-card>
   </div>
-  <div class="col-6">
+  <div class="col">
     <p-card styleClass="w-full max-h-20rem text-center">
-      <img [src]="githubStats.getTopLanguageByCommit()" class="h-full" />
+      <img [src]="githubStats.getTopLanguageByCommit()" />
     </p-card>
   </div>
 </div>
 <div class="grid mt-2">
   <div class="col">
     <p-card styleClass="w-full max-h-20rem text-center">
-      <img [src]="githubStats.getTopLanguages()" class="h-full" />
+      <img [src]="githubStats.getTopLanguages()" />
     </p-card>
   </div>
 </div>

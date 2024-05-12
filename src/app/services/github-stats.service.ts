@@ -9,6 +9,9 @@ export class GithubStatsService {
   private profileStatsBaseUrl =
     'http://github-profile-summary-cards.vercel.app';
   private githubStatsbaseUrl = 'https://github-readme-stats.vercel.app';
+  private streakStatsbaseUsr =
+    'https://github-readme-streak-stats.herokuapp.com';
+  private starDevbaseUrl = 'https://stardev.io';
   private theme = 'bear';
 
   public getUserMainStats() {
@@ -33,5 +36,21 @@ export class GithubStatsService {
 
   public getTopLanguages() {
     return `${this.githubStatsbaseUrl}/api/top-langs/?username=${userData.githubUser}&layout=compact&theme=${this.theme}&hide_border=true&&langs_count=8`;
+  }
+
+  public getStreaks() {
+    return `${this.streakStatsbaseUsr}/?user=${userData.githubUser}&theme=${this.theme}&hide_border=true`;
+  }
+
+  public getProductiveTime() {
+    return `${this.profileStatsBaseUrl}/api/cards/productive-time?username=${userData.githubUser}&theme=${this.theme}&utcOffset=${userData.timezone}`;
+  }
+
+  public getLocalStarDevStats() {
+    return `${this.starDevbaseUrl}/developers/${userData.githubUser}/badge/languages/locality.svg`;
+  }
+
+  public getGlobalStarDevStats() {
+    return `${this.starDevbaseUrl}/developers/${userData.githubUser}/badge/languages/global.svg`;
   }
 }

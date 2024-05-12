@@ -1,1 +1,26 @@
-<p>streak-section works!</p>
+<div class="grid">
+  <div class="col">
+    <p-card styleClass="w-full max-h-20rem text-center">
+      <img [src]="githubStats.getStreaks()" />
+    </p-card>
+  </div>
+  <div class="col">
+    <p-card styleClass="w-full max-h-20rem text-center">
+      <img [src]="githubStats.getProductiveTime()" />
+    </p-card>
+  </div>
+</div>
+<div class="grid">
+  <div class="col">
+    <img
+      [src]="githubStats.getLocalStarDevStats()"
+      class="w-full border-round"
+    />
+  </div>
+  <div class="col">
+    <img
+      [src]="githubStats.getGlobalStarDevStats()"
+      class="w-full border-round"
+    />
+  </div>
+</div>
