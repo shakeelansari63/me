@@ -1,27 +1,47 @@
-# MyPortfolio
+# My Github Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+This is a Github Portfolio (inspired by [@said7388](said7388/github-portfolio)).  
+It is re-written in Angular without any SSR component, meaning once compiled, it can be served as static website from anywhere without needing a web server.
 
-## Development server
+It can be served from Azure Static WebApp, Github GH-Pages, AWS S3 etc.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## How to customize
 
-## Code scaffolding
+#### Change the File 'src/app/data/user-data.ts' and update your own details
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to test
 
-## Build
+#### Run following to install dependencies and run locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install
+npm start
+```
 
-## Running unit tests
+## How to Build
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Run following command to generate final bundle
 
-## Running end-to-end tests
+```bash
+ng build
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+After built, the output will be generated in `dist` directory. Use that to deploy.
 
-## Further help
+## Example
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I have published my Github Profile at [https://shakeelansari63.github.io/me](https://shakeelansari63.github.io/me). Check it out.  
+If you wnat to know how it can be published to `gh-pages` checkout my workflow at `.github/workflows/publish-to-gh-pages.yaml`
+
+## ❤️ Thanks
+
+This work wouldn't be possible without the hard work of following repos and their amazing owners.
+
+- [`@said7388/github-portfolio`](https://github.com/said7388/github-portfolio)
+- [`@vn7n24fzkq/github-profile-summary-cards`](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+- [`@anuraghazra/github-readme-stats`](https://github.com/anuraghazra/github-readme-stats)
+- [`@denvercoder1/github-readme-streak-stats`](https://github.com/denvercoder1/github-readme-streak-stats)
+- [`@rschristian/github-contribution-calendar-api`](https://github.com/rschristian/github-contribution-calendar-api)
+- [`@cjosue15/ngx-heatmap-calendar`](https://github.com/cjosue15/ngx-heatmap-calendar)
+
+Go ahead give them some stars as well.
