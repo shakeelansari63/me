@@ -60,7 +60,7 @@ export class GithubApiServiceService {
     this.http
       .get(
         this.baseApiUrl +
-          `/search/repositories?q=user:${userData.githubUser}+fork:false&sort=stars&per_page=10&type=Repositories`
+          `/search/repositories?q=user:${userData.githubUser}+fork:false+archived:false&sort=stars&per_page=10&type=Repositories`
       )
       .subscribe(
         (projectResult) => {
