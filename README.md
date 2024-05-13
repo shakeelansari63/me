@@ -40,6 +40,7 @@ If you wnat to know how it can be published to `gh-pages` checkout my workflow a
 
 This work wouldn't be possible without the hard work of following repos and their amazing owners.
 
+- [`@primefaces/primeng`](https://github.com/primefaces/primeng)
 - [`@said7388/github-portfolio`](https://github.com/said7388/github-portfolio)
 - [`@vn7n24fzkq/github-profile-summary-cards`](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 - [`@anuraghazra/github-readme-stats`](https://github.com/anuraghazra/github-readme-stats)
