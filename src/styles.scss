@@ -6,6 +6,17 @@ body {
   background-color: #1f2023 !important;
 }
 
+.p-button.border-gradient-purple {
+  border-right-color:#743ad5;
+  border-left-color:#d53a9d;
+  background:
+    linear-gradient(to left,
+      rgb(116, 58, 213) 0%, rgb(186, 58, 143) 70% ,
+      transparent 70%,  transparent 85%, 
+      rgb(201, 58, 128) 85%, rgb(213, 58, 157) 100%) top/100% 2px,
+    linear-gradient(to left, #743ad5 0%, #d53a9d 100%) bottom/100% 2px;
+}
+
 @font-face {
     font-family: SpaceMono;
     src: url(assets/fonts/SpaceMono-Regular.ttf);
