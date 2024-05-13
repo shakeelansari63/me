@@ -17,6 +17,7 @@ import { LanguagesSectionComponent } from './languages-section/languages-section
 import { StreakSectionComponent } from './streak-section/streak-section.component';
 import { ActivitySectionComponent } from './activity-section/activity-section.component';
 import { FooterSectionComponent } from './footer-section/footer-section.component';
+import { NgxHeatmapCalendar } from '../lib/ngx-heatmap-calendar.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
     SplitterModule,
     CardModule,
     ImageModule,
+    NgxHeatmapCalendar,
   ],
   exports: [MainPageComponent],
 })

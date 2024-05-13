@@ -1,3 +1,5 @@
+import { HeatMapDate } from '../lib/ngx-heatmap-calendar.interface';
+
 export class GitProfileModel {
   avatar_url: string | null = null;
   bio: string | null = null;
@@ -120,4 +122,21 @@ export class GitProjectModel {
   watchers: number | null = null;
   default_branch: string | null = null;
   score: number | null = null;
+}
+
+export class ContributionData {
+  date: string = '';
+  intensity: string = '';
+  count: string = '';
+}
+
+export class ContributionResult {
+  total: number = 0;
+  contributions: ContributionData[][] = [];
+}
+
+export interface ContribSubject {
+  startDate: Date;
+  endDate: Date;
+  data: HeatMapDate[];
 }

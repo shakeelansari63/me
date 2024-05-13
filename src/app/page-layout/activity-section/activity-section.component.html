@@ -1,1 +1,9 @@
-<p>activity-section works!</p>
+<div class="flex justify-content-center flex-wrap">
+  <ngx-heatmap-calendar
+    [dates]="(gitService.getUserContributions() | async)!.data"
+    [startDate]="(gitService.getUserContributions() | async)!.startDate"
+    [endDate]="(gitService.getUserContributions() | async)!.endDate"
+    [classForValue]="callBackCssClass"
+    class="max-w-100 max-h-100 w-100"
+  />
+</div>
