@@ -7,16 +7,19 @@ It can be served from Azure Static WebApp, Github GH-Pages, AWS S3 etc.
 
 ## How to customize
 
-#### Change the File 'src/app/data/user-data.ts' and update your own details
+#### Change the File `src/app/data/user-data.ts` and update your own details
 
 ## How to test
 
 #### Run following to install dependencies and run locally
 
 ```bash
+npm install -g @angular/cli
 npm install
 npm start
 ```
+
+Default server runs on `localhost:4200`, open this link and your app is running.
 
 ## How to Build
 
