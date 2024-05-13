@@ -33,7 +33,7 @@ After built, the output will be generated in `dist` directory. Use that to deplo
 
 ## Example
 
-I have published my Github Profile at [https://shakeelansari63.github.io/me](https://shakeelansari63.github.io/me). Check it out.  
+I have published my Github Profile at [https://shakeelansari63.github.io/portfolio](https://shakeelansari63.github.io/portfolio). Check it out.  
 If you want to know how it can be published to `gh-pages` checkout my workflow at `.github/workflows/publish-to-gh-pages.yaml`
 
 ## ❤️ Credits
