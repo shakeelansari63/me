@@ -10,6 +10,14 @@ import { userData } from '../../data/user-data';
 })
 export class ProjectsSectionComponent {
   userProjectRepo = `https://github.com/${userData.githubUser}?tab=repositories`;
+
   constructor(public statsService: GithubStatsService) {}
   @Input() projects: GitProjectModel[] = [];
+
+  openProject(projectname: string) {
+    window.open(
+      `https://github.com/${userData.githubUser}/${projectname}`,
+      '_blank'
+    );
+  }
 }
