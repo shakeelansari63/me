@@ -1,6 +1,6 @@
 # My Github Portfolio
 
-This is a Github Portfolio (inspired by [@said7388](said7388/github-portfolio)).  
+This is a Github Portfolio (inspired by [@said7388](https://github.com/said7388/github-portfolio)).  
 It is re-written in Angular without any SSR component, meaning once compiled, it can be served as static website from anywhere without needing a web server.
 
 It can be served from Azure Static WebApp, Github GH-Pages, AWS S3 etc.
