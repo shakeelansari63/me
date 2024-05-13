@@ -38,7 +38,7 @@ If you want to know how it can be published to `gh-pages` checkout my workflow a
 
 ## ❤️ Credits
 
-This work wouldn't be possible without the hard work of following repos and their amazing owners.
+This work wouldn't be possible without the hard work of following repos' amazing owners.
 
 - [`@primefaces/primeng`](https://github.com/primefaces/primeng)
 - [`@said7388/github-portfolio`](https://github.com/said7388/github-portfolio)
